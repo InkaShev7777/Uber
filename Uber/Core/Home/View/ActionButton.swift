@@ -8,9 +8,10 @@
 import SwiftUI
 
 struct ActionButton: View {
+    @Binding var showLocationSearchView: Bool
     var body: some View {
         Button {
-            
+            showLocationSearchView.toggle()
         } label: {
             Image(systemName: "line.3.horizontal")
                 .font(.title2)
@@ -25,5 +26,5 @@ struct ActionButton: View {
 }
 
 #Preview {
-    ActionButton()
+    ActionButton(showLocationSearchView: .constant(true))
 }
