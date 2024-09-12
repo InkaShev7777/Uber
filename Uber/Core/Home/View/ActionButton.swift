@@ -32,9 +32,9 @@ struct ActionButton: View {
         switch state {
         case .noInput: print("DEBUG: no input")
         case .locationSelected: mapState = .noInput
-            viewModel.selectedLocationCordinate = nil
+            viewModel.selectedUberLocation = nil
         case .searchingForLocation: mapState = .noInput
-            viewModel.selectedLocationCordinate = nil
+            viewModel.selectedUberLocation = nil
         }
     }
     

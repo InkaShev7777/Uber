@@ -21,6 +21,7 @@
 		C14014FA2C8DC82600B636FE /* UberMapViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14014F92C8DC82600B636FE /* UberMapViewRepresentable.swift */; };
 		C1762A002C907B39000CE071 /* RideType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17629FF2C907B39000CE071 /* RideType.swift */; };
 		C1762A022C90898E000CE071 /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1762A012C90898D000CE071 /* Double.swift */; };
+		C1762A042C909281000CE071 /* UberLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1762A032C909281000CE071 /* UberLocation.swift */; };
 		C19FE62A2C9039260086726C /* RideRequestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19FE6292C9039260086726C /* RideRequestView.swift */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +41,7 @@
 		C14014F92C8DC82600B636FE /* UberMapViewRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UberMapViewRepresentable.swift; sourceTree = "<group>"; };
 		C17629FF2C907B39000CE071 /* RideType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideType.swift; sourceTree = "<group>"; };
 		C1762A012C90898D000CE071 /* Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
+		C1762A032C909281000CE071 /* UberLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UberLocation.swift; sourceTree = "<group>"; };
 		C19FE6292C9039260086726C /* RideRequestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideRequestView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -133,6 +135,7 @@
 			children = (
 				C12009B92C8F364A0098457E /* MapVeiwState.swift */,
 				C17629FF2C907B39000CE071 /* RideType.swift */,
+				C1762A032C909281000CE071 /* UberLocation.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -276,6 +279,7 @@
 				C14014E32C8DC5E900B636FE /* UberApp.swift in Sources */,
 				C12009B62C8EFCD30098457E /* LocationSeachResultCell.swift in Sources */,
 				C12009B02C8EF2F20098457E /* LocationSearchActivationView.swift in Sources */,
+				C1762A042C909281000CE071 /* UberLocation.swift in Sources */,
 				C12009B42C8EFA180098457E /* LocationSeachView.swift in Sources */,
 				C12009B22C8EF6DE0098457E /* ActionButton.swift in Sources */,
 				C1762A002C907B39000CE071 /* RideType.swift in Sources */,
