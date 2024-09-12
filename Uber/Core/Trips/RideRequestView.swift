@@ -10,6 +10,7 @@ import SwiftUI
 struct RideRequestView: View {
     @State private var selectedRideType: RideType = .uberX
     @EnvironmentObject var locationViewModel: LocationSearchViewModel
+    private var notificationManager = NotificationManager()
     
     var body: some View {
         VStack {
@@ -137,7 +138,7 @@ struct RideRequestView: View {
             //request ride button
             
             Button {
-                
+                self.notificationManager.sentNotification(with: "UBER", body: "Your driver waiting for you!", date: Date())
             } label: {
                 Text("CONFIRM RIDE")
                     .fontWeight(.bold)
