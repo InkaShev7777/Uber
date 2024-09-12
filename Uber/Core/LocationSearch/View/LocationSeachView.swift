@@ -64,6 +64,7 @@ struct LocationSeachView: View {
             }
             
         }
+        .background(Color.theme.backgroundColor)
         .background(Color(.white))
     }
 }
