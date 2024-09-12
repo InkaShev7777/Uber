@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ActionButton: View {
     @Binding var mapState: MapVeiwState
+    @Binding var isShow: Bool
     @EnvironmentObject var viewModel: LocationSearchViewModel
     
     var body: some View {
@@ -30,7 +31,7 @@ struct ActionButton: View {
     
     func actionForState(_ state: MapVeiwState){
         switch state {
-        case .noInput: print("DEBUG: no input")
+        case .noInput: isShow.toggle()
         case .locationSelected: mapState = .noInput
             viewModel.selectedUberLocation = nil
         case .searchingForLocation, .polylineAdded: mapState = .noInput
@@ -48,5 +49,5 @@ struct ActionButton: View {
 }
 
 #Preview {
-    ActionButton(mapState: .constant(.noInput))
+    ActionButton(mapState: .constant(.noInput), isShow: .constant(false))
 }
