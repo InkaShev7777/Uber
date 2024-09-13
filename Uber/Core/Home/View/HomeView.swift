@@ -9,6 +9,7 @@ import SwiftUI
 
 struct HomeView: View {
     @State private var mapState = MapVeiwState.noInput
+    @State private var showMenu = false
     @EnvironmentObject var viewModel: LocationSearchViewModel
     
     var body: some View {
@@ -29,10 +30,17 @@ struct HomeView: View {
                         }
                 }
                 
-                ActionButton(mapState: $mapState)
+                ActionButton(mapState: $mapState, isShow: $showMenu)
                     .padding(.leading)
                     .padding(.top, 4)
             }
+            
+            if showMenu {
+                withAnimation {
+                    SideMenu(isshow: $showMenu)
+                }
+            }
+            
             
             if mapState == .locationSelected || mapState == .polylineAdded {
                 RideRequestView()
